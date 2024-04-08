@@ -110,8 +110,14 @@ input, select, textarea {
 		color: #888;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	h1, h3, h4, h5, h6 {
 		font-weight: 300;
+		color: #666;
+		line-height: 1.5em;
+	}
+
+	h2 {
+		font-weight: 1000;
 		color: #666;
 		line-height: 1.5em;
 	}
@@ -1754,15 +1760,14 @@ input, select, textarea {
 			width: 100%;
 		}
 
-		.image.avatar48 {
-			width: 48px;
-			height: 48px;
-			background: #f00;
+		.image.avatar {
+			width: 65px;
+			height: 65px;
 		}
 
-			.image.avatar48 img {
-				width: 48px;
-				height: 48px;
+			.image.avatar img {
+				width: 65px;
+				height: 65px;
 			}
 
 		.image.fit {
