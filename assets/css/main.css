@@ -352,7 +352,7 @@ h6 {
 @media (min-width: 1280px) {
   .navbar {
     padding: 0;
-    right: 65px
+    right: 92px
   }
 
   .navbar ul {
@@ -584,6 +584,21 @@ h6 {
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.space {
+    margin-top: 100px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.space2 {
+    margin-top: 25px;
+    margin-bottom: 35px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.about {
+    margin-top: 25px;
+}
+
 .about .content h2 {
   font-weight: 700;
   font-size: 24px;
@@ -1043,7 +1058,7 @@ h6 {
 # Contact Section
 --------------------------------------------------------------*/
 .contact .info-item+.info-item {
-  margin-top: 40px;
+  padding-top: 20px;
 }
 
 .contact .info-item i {
