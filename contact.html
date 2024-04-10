@@ -36,7 +36,7 @@
         <!-- ======= Header ======= -->
         <header id="header" class="header d-flex align-items-center fixed-top">
             <div class="container-fluid d-flex align-items-center justify-content-between">
-                <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+                <a href="index" class="logo d-flex align-items-center me-auto me-lg-0">
                     <i class="bi bi-code"></i>
                     <h1>Brandon Wright</h1>
                 </a>
@@ -44,9 +44,9 @@
                 <!-- ======= Navigation ======= -->
                 <nav id="navbar" class="navbar">
                     <ul>
-                        <li><a href="index.html">Projects</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html" class="active">Contact</a></li>
+                        <li><a href="index">Projects</a></li>
+                        <li><a href="about">About</a></li>
+                        <li><a href="contact" class="active">Contact</a></li>
                     </ul>
                 </nav>
 
@@ -72,7 +72,8 @@
                     <div class="row d-flex justify-content-center">
                         <div class="col-lg-7 text-center">
                             <h2>Contact</h2>
-                            <p>The best ways to reach me are either at the email address below or my personal cell. 
+                            <p>To contact me, just fill out a message in the boxes below and send it to me! 
+                                The other best ways to reach me are either at the email address below or my personal cell. 
                                 If neither of those are too appealing to you, please contact me on one of my socials listed above!</p>
                         </div>
                     </div>
@@ -82,9 +83,32 @@
             <!-- ======= Contact Section ======= -->
             <section id="contact" class="contact">
                 <div class="container">
-                    <div class="row gy-4 justify-content-center">
+                    <div class="row gy-3 justify-content-center">
                         <div class="col-lg-5">
                             <img src="assets/img/resume.png" class="img-fluid" alt="">
+                        </div>
+
+                        <div class="col-lg-3">
+                            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="email" id="email"
+                                        placeholder="Your Email" required>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <input type="text" class="form-control" name="subject" id="subject"
+                                        placeholder="Subject" required>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <textarea class="form-control" name="message" rows="5" placeholder="Message"
+                                        required></textarea>
+                                </div>
+                                <div class="my-3">
+                                    <div class="loading">Loading</div>
+                                    <div class="error-message"></div>
+                                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                                </div>
+                                <div class="text-center"><button type="submit">Send Message</button></div>
+                            </form>
                         </div>
 
                         <div class="col-lg-2 content">
