@@ -127,17 +127,32 @@
                         <div class="col-lg-8">
                             <div class="portfolio-description">
                                 <h2>Project Overview</h2>
-                                <p></p>
+                                <p>Eternity is a passion-project turned game engine framework that supports two-dimensional 
+                                    graphics and boasts extremely performant code. Written entirely in C++ and compiled with an -O3 flag, 
+                                    you can guarantee that anything built using this framework will be able to be run on more things than 
+                                    <a href="https://store.steampowered.com/app/379720/DOOM/">Doom</a>. Jokes aside, massive amounts of 
+                                    effort were put in to avoid any possible problems commonly found in modern games - such as memory 
+                                    leaks - by utilizing both shared and unique pointers across the entire codebase. Proper programming 
+                                    practices were followed throughout the creation of this framework, which is still being actively developed.</p>
 
                                 <div class="space2">
                                     <h2 style="text-align: center;">Notable Features</h2>
                                 </div>
 
-                                <h2>Project Overview</h2>
-                                <p></p>
+                                <h2>Infinite Game World</h2>
+                                <p>Taking the majority of current development time, by far, is the infinite game world supported by the Eternity Framework. 
+                                    This system utilizes a generation algorithm derived from the popular <a href="https://playgameoflife.com">Conway's Game of Life</a> 
+                                    where the game world is initially populated with a random noise of different tile types, but then cycled and smoothed 
+                                    through Conway's algorithm until navigatable pathways are formed. During gameplay, regions of the game world are saved 
+                                    into files to be loaded again later when they enter render distance. This process, alongside multithreading, allows for 
+                                    an extremely performant and smooth gameplay experience that isn't stalled while regions are created or loaded.</p>
 
-                                <h2>Project Overview</h2>
-                                <p></p>
+                                <h2>Custom User Interface</h2>
+                                <p>Every part of the rendering process is built using a custom widget-style system where widgets are pasted onto 
+                                    the screen at specified locations. Built using the amazing <a href="https://github.com/tommyettinger/BearLibTerminal">BearLibTerminal</a> 
+                                    library for rendering an ASCII grid to a window, performance is ensured to be amazing as nothing is being rendered 
+                                    except for glyphs. Programmers can expand this widget system to display anything they could dream of as it supports 
+                                    32-bit color, 8-way anchoring, and efficient responses to user input.</p>
                             </div>
                         </div>
 
